@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 250 248 255;
+  --foreground: 21 5 56;
+}
+
+html, body {
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #c8baff; border-radius: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+
+.gradient-text {
+  background: linear-gradient(120deg, #6f3dff 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(120deg, #ec4899 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-shadow { box-shadow: 0 1px 2px rgba(21,5,56,.04), 0 4px 16px rgba(21,5,56,.08); }
+.card-shadow-lg { box-shadow: 0 4px 12px rgba(21,5,56,.06), 0 16px 40px rgba(21,5,56,.12); }
+
+.code-shadow { box-shadow: 0 0 0 1px rgba(111,61,255,0.15), 0 8px 24px rgba(21,5,56,0.12); }
+
